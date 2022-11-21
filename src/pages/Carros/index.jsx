@@ -1,4 +1,3 @@
-import "./style.css";
 import Sidebar from "../../components/Sidebar";
 import axios from "../../services/axios";
 import { getItem } from "../../utils/storage";
@@ -81,8 +80,8 @@ function Carros() {
       )}
 
       <Sidebar page="carros" />
-      <div className="carros-content">
-        <div className="carros-cabecalho">
+      <div className="content">
+        <div className="cabecalho">
           <h1>Meus carros</h1>
 
           <button
@@ -94,7 +93,7 @@ function Carros() {
             Novo Carro
           </button>
         </div>
-        <table className="table-carros">
+        <table className="table">
           <thead>
             <tr>
               <th>Modelo</th>

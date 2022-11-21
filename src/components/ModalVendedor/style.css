@@ -1,4 +1,4 @@
-.modal-vendedor-container {
+.modal-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -12,7 +12,7 @@
   z-index: 2;
 }
 
-.modal-vendedor {
+.modal {
   height: fit-content;
   width: 23vw;
   padding: 15px;
@@ -22,7 +22,7 @@
   box-shadow: 8px 8px 20px 1px rgba(0, 0, 0, 0.3);
 }
 
-.modal-vendedor h2 {
+.modal h2 {
   color: #6813d4;
   text-align: center;
 
@@ -30,7 +30,7 @@
   margin-bottom: 20px;
 }
 
-.modal-vendedor span {
+.modal span {
   text-align: center;
   margin-bottom: 20px;
 
@@ -41,8 +41,8 @@
   color: #aaaaaa;
 }
 
-.modal-vendedor input,
-.modal-vendedor select {
+.modal input,
+.modal select {
   padding: 0 0 0 5px;
   height: 55px;
   width: 100%;
@@ -55,19 +55,19 @@
   background-color: transparent;
 }
 
-.modal-vendedor input::placeholder,
+.modal input::placeholder,
 select::placeholder {
   color: #aaaaaa;
 }
 
-.modal-vendedor div {
+.modal div {
   width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.modal-vendedor div button {
+.modal div button {
   width: 50%;
   height: 50px;
 
@@ -83,10 +83,10 @@ select::placeholder {
   font-size: 1rem;
 }
 
-.modal-vendedor button:last-child:disabled {
+.modal button:last-child:disabled {
   background-color: rgba(104, 19, 213, 0.5);
 }
 
-.modal-vendedor button:last-child {
+.modal button:last-child {
   background-color: #6813d5;
 }

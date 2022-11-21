@@ -126,14 +126,14 @@ function ModalVendedor({
   }
 
   return action === "excluir" ? (
-    <div className="modal-vendedor-container">
+    <div className="modal-container">
       <Backdrop
         sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}
         open={isModalVendedorLoading}
       >
         <CircularProgress sx={{ color: "#2BC5E0" }} />
       </Backdrop>
-      <div className="modal-vendedor">
+      <div className="modal">
         <h2>Atenção</h2>
         {temVendas ? (
           <span>
@@ -158,14 +158,14 @@ function ModalVendedor({
       </div>
     </div>
   ) : (
-    <div className="modal-vendedor-container">
+    <div className="modal-container">
       <Backdrop
         sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}
         open={isModalVendedorLoading}
       >
         <CircularProgress sx={{ color: "#2BC5E0" }} />
       </Backdrop>
-      <form className="modal-vendedor" onSubmit={handleSubmit}>
+      <form className="modal" onSubmit={handleSubmit}>
         <h2>
           {action === "cadastrar"
             ? "Cadastro do vendedor"

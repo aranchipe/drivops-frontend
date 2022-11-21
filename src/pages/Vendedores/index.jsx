@@ -81,8 +81,8 @@ function Vendedores() {
         />
       )}
       <Sidebar page="vendedores" />
-      <div className="vendedores-content">
-        <div className="vendedores-cabecalho">
+      <div className="content">
+        <div className="cabecalho">
           <h1>Meus vendedores</h1>
 
           <button
@@ -94,7 +94,7 @@ function Vendedores() {
             Novo Vendedor
           </button>
         </div>
-        <table className="table-vendedores">
+        <table className="table">
           <thead>
             <tr>
               <th>Nome</th>

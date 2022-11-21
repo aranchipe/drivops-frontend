@@ -1,4 +1,3 @@
-import "./style.css";
 import { useState } from "react";
 import axios from "../../services/axios";
 import { getItem } from "../../utils/storage";
@@ -105,14 +104,14 @@ function ModalVenda({
   }
 
   return action === "excluir" ? (
-    <div className="modal-venda-container">
+    <div className="modal-container">
       <Backdrop
         sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}
         open={isModalVendaLoading}
       >
         <CircularProgress sx={{ color: "#2BC5E0" }} />
       </Backdrop>
-      <div className="modal-venda">
+      <div className="modal">
         <h2>Atenção</h2>
 
         <span>Deseja excluir a venda?</span>
@@ -130,14 +129,14 @@ function ModalVenda({
       </div>
     </div>
   ) : (
-    <div className="modal-venda-container">
+    <div className="modal-container">
       <Backdrop
         sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}
         open={isModalVendaLoading}
       >
         <CircularProgress sx={{ color: "#2BC5E0" }} />
       </Backdrop>
-      <form className="modal-venda" onSubmit={handleSubmit}>
+      <form className="modal" onSubmit={handleSubmit}>
         <h2>
           {action === "cadastrar"
             ? "Cadastro da venda"
