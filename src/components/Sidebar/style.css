@@ -1,0 +1,79 @@
+.menu-lateral-container {
+  width: 20vw;
+  height: 100vh;
+  background-color: #2bc5e0;
+  padding: 1.25rem 0 0 1.25rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.menu-lateral-container h1 {
+  margin-bottom: 66px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+}
+
+.menu-lateral-container .doutor {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu-lateral-container .link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin: auto 0;
+}
+
+.roxo {
+  color: blueviolet;
+}
+
+.logout {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 76px;
+  margin-top: 30px;
+}
+
+.logout img {
+  cursor: pointer;
+  rotate: 180deg;
+}
+
+.link-div {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-left: -1.25rem;
+}
+
+.link-div:hover {
+  background-color: white;
+  cursor: pointer;
+  border-radius: 0px 48px 48px 0px;
+}
+
+.selecionado {
+  background-color: white;
+  border-radius: 0px 48px 48px 0px;
+}

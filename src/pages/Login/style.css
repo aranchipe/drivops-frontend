@@ -1,0 +1,115 @@
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.left-login{
+    display: flex;
+    justify-content: center;
+    background-image: url(../../assets//imagem-fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 40%;
+    position: relative;
+    text-align: center;
+    padding: 50px;
+}
+
+.left-login img {
+    width: 100px;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+}
+
+.left-login h1 {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: -150px;
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 32px;
+}
+
+.right-login {
+    width: 60%;
+    background-color: #F8F8F9;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.title-login {
+    margin-top: -100px;
+    margin-bottom: 32px;
+    color: #343447;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.area-button-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: calc(46px - 20px);
+    margin-bottom: 15px;
+}
+
+.password-login {
+    position: relative;
+}
+
+.password-login img {
+    position: absolute;
+    top: 37px;
+    right: 15px;
+    cursor: pointer;
+    width: 20px;
+    height: 18px;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: #2BC5E0;
+    border-radius: 6.25px;
+    color: #F8F8F9;
+    width: 100px;
+    height: 20.63px;
+
+  padding: 5px 35px 5px 35px;
+  }
+
+  .form-input input{
+    margin: 6px 0 20px 0;
+    width: 368px;
+    box-shadow: 0px 1px 2px rgb(16 24 40 / 5%);
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    background-color: #FFFFFF;
+    padding: 12px 0 12px 14px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #667085;
+  }
+  
+  
+  .form-input label{
+    font-weight: 600;
+    font-size: 14px;
+    color: #343447;
+    display: flex;
+  align-content: center;
+  flex-direction: column;
+  }
