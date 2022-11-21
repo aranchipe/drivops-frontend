@@ -125,7 +125,14 @@ function Vendas() {
                 <td>{item.modelo}</td>
                 <td>{item.cor}</td>
                 <td>{item.ano}</td>
-                <td>{format(new Date(item.data), "dd/MM/yyyy")}</td>
+                <td>
+                  {format(
+                    new Date(item.data).setDate(
+                      new Date(item.data).getDate() + 1
+                    ),
+                    "dd/MM/yyyy"
+                  )}
+                </td>
                 <td>{`R$ ${item.valor}`}</td>
                 <td>{item.vendedor}</td>
                 <td>

@@ -41,29 +41,29 @@ function Dashboard() {
         },
       });
       response.data.map((item) => {
-        if (item.mes == 0) {
+        if (item.mes == 1) {
           item.mes = "JAN";
-        } else if (item.mes == 1) {
-          item.mes = "FEV";
         } else if (item.mes == 2) {
-          item.mes = "MAR";
+          item.mes = "FEV";
         } else if (item.mes == 3) {
-          item.mes = "ABR";
+          item.mes = "MAR";
         } else if (item.mes == 4) {
-          item.mes = "MAI";
+          item.mes = "ABR";
         } else if (item.mes == 5) {
-          item.mes = "JUN";
+          item.mes = "MAI";
         } else if (item.mes == 6) {
-          item.mes = "JUL";
+          item.mes = "JUN";
         } else if (item.mes == 7) {
-          item.mes = "AGO";
+          item.mes = "JUL";
         } else if (item.mes == 8) {
-          item.mes = "SET";
+          item.mes = "AGO";
         } else if (item.mes == 9) {
-          item.mes = "OUT";
+          item.mes = "SET";
         } else if (item.mes == 10) {
-          item.mes = "NOV";
+          item.mes = "OUT";
         } else if (item.mes == 11) {
+          item.mes = "NOV";
+        } else if (item.mes == 12) {
           item.mes = "DEZ";
         }
       });
@@ -85,7 +85,33 @@ function Dashboard() {
       });
       response.data.map((item) => {
         item.media = Number(item.media).toFixed(2);
+        if (item.mes == 1) {
+          item.mes = "JAN";
+        } else if (item.mes == 2) {
+          item.mes = "FEV";
+        } else if (item.mes == 3) {
+          item.mes = "MAR";
+        } else if (item.mes == 4) {
+          item.mes = "ABR";
+        } else if (item.mes == 5) {
+          item.mes = "MAI";
+        } else if (item.mes == 6) {
+          item.mes = "JUN";
+        } else if (item.mes == 7) {
+          item.mes = "JUL";
+        } else if (item.mes == 8) {
+          item.mes = "AGO";
+        } else if (item.mes == 9) {
+          item.mes = "SET";
+        } else if (item.mes == 10) {
+          item.mes = "OUT";
+        } else if (item.mes == 11) {
+          item.mes = "NOV";
+        } else if (item.mes == 12) {
+          item.mes = "DEZ";
+        }
       });
+
       setMediaPorMes(response.data);
     } catch (error) {
     } finally {
@@ -97,6 +123,7 @@ function Dashboard() {
     listarVendasDosVendedores();
     listarVendasPorMes();
     listarMediaPorMes();
+    console.log("minha pica");
   }, []);
 
   return (

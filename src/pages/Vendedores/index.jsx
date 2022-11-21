@@ -8,6 +8,7 @@ import deleteIcon from "../../assets/delete-icon.svg";
 import ModalVendedor from "../../components/ModalVendedor";
 import Backdrop from "@mui/material/Backdrop";
 import CircularProgress from "@mui/material/CircularProgress";
+import { formatCpf, formatPhone } from "../../utils/format";
 
 function Vendedores() {
   const [vendedores, setVendedores] = useState([]);
@@ -110,8 +111,8 @@ function Vendedores() {
                 <td>{item.nome}</td>
                 <td>{item.idade}</td>
                 <td>{item.email}</td>
-                <td>{item.cpf}</td>
-                <td>{item.telefone}</td>
+                <td>{formatPhone(item.cpf)}</td>
+                <td>{formatPhone(item.telefone)}</td>
                 <td>
                   <div className="action-icons">
                     <img
